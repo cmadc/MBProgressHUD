@@ -1160,14 +1160,14 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     if (style == MBProgressHUDBackgroundStyleBlur) {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 || TARGET_OS_TV
         if (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_8_0) {
-            UIBlurEffect *effect = [UIBlurEffect effectWithStyle:self.blurEffectStyle];
-            UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:effect];
-            [self addSubview:effectView];
-            effectView.frame = self.bounds;
-            effectView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-            self.backgroundColor = self.color;
-            self.layer.allowsGroupOpacity = NO;
-            self.effectView = effectView;
+//            UIBlurEffect *effect = [UIBlurEffect effectWithStyle:self.blurEffectStyle];
+//            UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:effect];
+//            [self addSubview:effectView];
+//            effectView.frame = self.bounds;
+//            effectView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//            self.backgroundColor = self.color;
+//            self.layer.allowsGroupOpacity = NO;
+//            self.effectView = effectView;
         } else {
 #endif
 #if !TARGET_OS_TV
